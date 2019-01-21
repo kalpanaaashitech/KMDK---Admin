@@ -1,0 +1,66 @@
+<!-- Header Section -->
+<div class="Header_Section">
+   <!-- Main Header -->
+   <div class="Main_Header">
+      <div class="Menu">
+         <img src="../assets/Images/basic/logo-light.png">
+      </div>
+   </div>
+   <!-- Nav Section -->
+   <div class="Nav_Section">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-3 Side_Nav">
+               <div class="side_nav">
+                  <ul class="nav_menu">
+                     <li class="nav_menu_List"><span><i class="material-icons">schedule</i></span>புள்ளிவிவரம்</li>
+                     <a [routerLink]="['/Members_Approval']" ><li class="nav_menu_List">
+                        <!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+                           <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+                              <button mat-icon-button disabled></button>
+                              {{node.filename}} : {{node.type}}
+                           </mat-tree-node>
+                           
+                           <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+                              <button mat-icon-button matTreeNodeToggle
+                                       [attr.aria-label]="'toggle ' + node.filename">
+                                 <mat-icon class="mat-icon-rtl-mirror">
+                                 {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                                 </mat-icon>
+                              </button>
+                              {{node.filename}} : {{node.type}}
+                           </mat-tree-node>
+                           </mat-tree> -->
+                        <span class="menu_tree">
+                           <span class="menu"><i class="material-icons">people</i>
+                              <span>உறுப்பினர்கள்</span>
+                           </span>
+                           <!-- <ul class="menu_tree_view">
+                              <li class="menu_tree_list">List</li>
+                              <li class="menu_tree_list">Filter</li>
+                              <li class="menu_tree_list">Import/Export</li>
+                           </ul> -->
+                        </span>
+                     </li></a>
+                     <a [routerLink]="['/Officials_List']"><li class="nav_menu_List"><span><i class="material-icons">people</i></span>அதிகாரிகள்</li></a>
+                     <a [routerLink]="['/Event_Calendar']"><li class="nav_menu_List"><span><i class="material-icons">calendar_today</i></span>நிகழ்வுகள் தொகுப்பு</li></a>
+                     <li class="nav_menu_List"><span><i class="material-icons">assignment</i></span>புகார்கள்</li>
+                     <li class="nav_menu_List"><span><i class="material-icons">people</i></span>உறுப்பினர்கள்</li>
+                     <li class="nav_menu_List"><span><i class="material-icons">people</i></span>உறுப்பினர்கள்</li>
+                     <li class="nav_menu_List"><span><i class="material-icons">people</i></span>உறுப்பினர்கள்</li>
+                     <li class="nav_menu_List"><span><i class="material-icons">people</i></span>உறுப்பினர்கள்</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-sm-9">
+               <router-outlet></router-outlet>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   
+
+
+
+

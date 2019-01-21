@@ -1,0 +1,226 @@
+<!-- Calendar Section -->
+<div class="Calendar_Section">
+   <!-- Heading -->
+   <div class="Heading">
+      <div class="row">
+         <div class="col-sm-6 heading">
+            <h6>நிகழ்வுகள் தொகுப்பு</h6>
+         </div>
+      </div>
+   </div><br>
+   <!-- Button -->
+   <div class="button_section">
+      <button mat-raised-button color="primary" style="margin-right:10px" [matMenuTriggerFor]="menu">நிகழ்வுகள்</button>
+      <mat-menu class="MenuStyleOne" #menu="matMenu" [overlapTrigger]="false" xPosition="after" yPosition="below" class="MenuStyleOne">
+         <button mat-menu-item [ngClass]="{'active': Active_Tab === 'Today_Events'}" (click)="Active_Tab_Change('Today_Events')">இன்று</button>
+         <button mat-menu-item [ngClass]="{'active': Active_Tab === 'Next_Day_Events'}" (click)="Active_Tab_Change('Next_Day_Events')">அடுத்த நாள்</button>
+         <button mat-menu-item [ngClass]="{'active': Active_Tab === 'Next_Week_Events'}" (click)="Active_Tab_Change('Next_Week_Events')">அடுத்த வாரம்</button>
+         <button mat-menu-item [ngClass]="{'active': Active_Tab === 'Next_Month_Events'}" (click)="Active_Tab_Change('Next_Month_Events')">அடுத்த மாதம்</button>
+      </mat-menu>
+      <button mat-raised-button color="primary"> புதிய நிகழ்வு சேர்க்கை </button>
+   </div><br><br>
+   <!-- search -->
+   <div class="search">
+      <input type="text" placeholder="Search">
+   </div><br><br>
+   <!-- Table Section -->
+   <div class="Table_Section" *ngIf="Active_Tab === 'Today_Events'">
+      <table>
+         <thead>
+            <tr>
+               <th>வ.எண்</th>
+               <th> நிகழ்வு தலைப்பு </th>
+               <th> நிகழ்வு விளக்கம் </th>
+               <th> நிகழ்வு இடம்  </th>
+               <th> நிகழ்வு தேதி </th>
+               <th> நிகழ்வு நேரம் </th>
+               <th> நடவடிக்கை </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>4</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>5</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- Table Section -->
+   <div class="Table_Section" *ngIf="Active_Tab === 'Next_Day_Events'">
+      <table>
+         <thead>
+            <tr>
+               <th>வ.எண்</th>
+               <th> நிகழ்வு தலைப்பு </th>
+               <th> நிகழ்வு விளக்கம் </th>
+               <th> நிகழ்வு இடம்  </th>
+               <th> நிகழ்வு தேதி </th>
+               <th> நிகழ்வு நேரம் </th>
+               <th> நடவடிக்கை </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- Table Section -->
+   <div class="Table_Section" *ngIf="Active_Tab === 'Next_Week_Events'">
+      <table>
+         <thead>
+            <tr>
+               <th>வ.எண்</th>
+               <th> நிகழ்வு தலைப்பு </th>
+               <th> நிகழ்வு விளக்கம் </th>
+               <th> நிகழ்வு இடம்  </th>
+               <th> நிகழ்வு தேதி </th>
+               <th> நிகழ்வு நேரம் </th>
+               <th> நடவடிக்கை </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>4</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- Table Section -->
+   <div class="Table_Section" *ngIf="Active_Tab === 'Next_Month_Events'">
+      <table>
+         <thead>
+            <tr>
+               <th>வ.எண்</th>
+               <th> நிகழ்வு தலைப்பு </th>
+               <th> நிகழ்வு விளக்கம் </th>
+               <th> நிகழ்வு இடம்  </th>
+               <th> நிகழ்வு தேதி </th>
+               <th> நிகழ்வு நேரம் </th>
+               <th> நடவடிக்கை </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Ulaga Kongu Tamilar Manadu</span></td>
+               <td><span>Namakkal</span></td>
+               <td><span>2019-02-03</span></td>
+               <td><span>09:00:00</span></td>
+               <td><span><button mat-raised-button color="primary">Primary</button></span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+
+

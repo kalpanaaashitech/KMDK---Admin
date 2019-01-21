@@ -1,0 +1,75 @@
+/* Officials List Section */
+.officials_List_Section{
+   margin-bottom:20px;
+}
+/* Heading */
+.heading h6{
+   font-size: 17px;
+   font-weight: 600;
+   letter-spacing: 0.6px;
+   color: #56AE5A;
+   margin-top: 20px;
+}
+/* Search */
+.search input{
+   width: 50%;
+   height: 35px;
+   border: 1px solid #e0e0e0;
+   border-radius: 3px;
+   outline: none;
+   padding: 5px 5px;
+   font-size: 16px;
+   font-weight: 600;
+   color: #807d7d;
+   float:right;
+}
+/* Table Section */
+.Table_Section p{
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 0.6px;
+}
+.Table_Section p i{
+   font-size: 16px;
+   padding: 0px 7px;
+}
+.Table_Section p span{
+   float: right;
+   font-size: 13px;
+   margin-right: 10px;
+}
+.Table_Section table{
+   width: 100%;
+   box-shadow: 2px 2px 3px #d2cdcd;
+}
+.Table_Section table thead{
+   background-color: #56AE5A;
+   border: 1px solid #56AE5A;
+}
+.Table_Section table thead th{
+   padding: 10px 25px;
+   font-size: 14px;
+   font-weight: 600;
+   color: #fff;
+}
+.Table_Section table tbody{
+   border: 1px solid #d0cccc;
+}
+.Table_Section table tbody tr{
+   height: 50px;
+   border-bottom: 1px solid #dad5d5;
+}
+.Table_Section table tbody tr:nth-child(odd){
+   background-color: #ffffff;
+}
+.Table_Section table tbody tr td{
+   font-size: 14px;
+   color: #536262;
+   text-align: center;
+}
+.Table_Section table tbody tr:hover{
+   box-shadow: 2px 2px 3px #dad5d5;
+}
+.Table_Section table tbody tr td:first-child{
+   padding: 0px 35px;
+}

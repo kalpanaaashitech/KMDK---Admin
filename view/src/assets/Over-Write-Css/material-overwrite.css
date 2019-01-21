@@ -1,0 +1,38 @@
+/* Button Color Overwrite */
+.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+   background-color: #56AE5A;
+   color: #ffffff;
+   outline:none;
+   line-height: 31px;
+   font-size: 13px;
+}
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary{
+   color: #56AE5A;
+}
+.mat-button.mat-primary .mat-button-focus-overlay, .mat-icon-button.mat-primary .mat-button-focus-overlay, .mat-stroked-button.mat-primary .mat-button-focus-overlay{
+   background-color: rgba(74, 182, 95, 0.1);
+}
+
+
+
+
+/* Menu Button  */
+
+.MenuStyleOne .mat-menu-item-highlighted:not([disabled]),
+.MenuStyleOne .mat-menu-item.cdk-keyboard-focused:not([disabled]),
+.MenuStyleOne .mat-menu-item.cdk-program-focused:not([disabled]),
+.MenuStyleOne .mat-menu-item:hover:not([disabled]) {
+   background: #56AE5A !important;
+   color: #fff;
+   outline:none;
+}
+
+.MenuStyleOne .mat-menu-content:not(:empty) {
+   padding-top: 0px !important;
+   padding-bottom: 0px !important;
+}
+.MenuStyleOne .mat-menu-item{
+   line-height: 35px !important;
+   height: 35px !important;
+   font-size: 10px;
+}

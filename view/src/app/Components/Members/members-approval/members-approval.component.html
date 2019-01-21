@@ -1,0 +1,197 @@
+<!-- Members Approval Section -->
+<div class="Members_Approval_Section">
+   <!-- Heading -->
+   <div class="Heading">
+      <div class="row">
+         <div class="col-sm-6 heading">
+            <h6>நிலுவையிலுள்ள கோரிக்கைகள்</h6>
+         </div>
+      </div>
+   </div><br>
+   <div class="Tab">
+      <ul class="tabs">
+         <li class="tab" [ngClass]="{'active': Active_Tab === 'add_events'}" (click)="Active_Tab_Change('add_events')">
+            <span > கிளை செயலாளர் </span>
+         </li>
+         <li class="tab" [ngClass]="{'active': Active_Tab === 'upcoming_events'}" (click)="Active_Tab_Change('upcoming_events')">
+            <span > ஒன்றிய செயலாளர் </span>
+         </li>
+         <li class="tab" [ngClass]="{'active': Active_Tab === 'expired_events'}" (click)="Active_Tab_Change('expired_events')">
+            <span > மாவட்ட செயலாளர் </span>
+         </li>
+      </ul>
+   </div><br>
+   <!-- search -->
+   <div class="search">
+      <input type="text" placeholder="Search">
+   </div><br><br>
+   <!-- Table Section -->
+   <div class="Table_Section" *ngIf="Active_Tab === 'add_events'">
+      <table>
+         <thead>
+            <tr>
+               <th> வ.எண் </th>
+               <th> மாவட்டம் </th>
+               <th> ஒன்றியம்  </th>
+               <th> கிளை  </th>
+               <th> செயலாளர் பெயர்  </th>
+               <th> தொலைபேசி </th>
+               <th>  கோரிக்கை எண்ணிக்கை  </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>4</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>5</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div class="Table_Section" *ngIf="Active_Tab === 'upcoming_events'">
+      <table>
+         <thead>
+            <tr>
+               <th> வ.எண் </th>
+               <th> மாவட்டம் </th>
+               <th> ஒன்றியம்  </th>
+               <th> செயலாளர் பெயர்  </th>
+               <th> தொலைபேசி </th>
+               <th>  கோரிக்கை எண்ணிக்கை  </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>4</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>5</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div class="Table_Section" *ngIf="Active_Tab === 'expired_events'">
+      <table>
+         <thead>
+            <tr>
+               <th> வ.எண் </th>
+               <th> மாவட்டம் </th>
+               <th> செயலாளர் பெயர்  </th>
+               <th> தொலைபேசி </th>
+               <th>  கோரிக்கை எண்ணிக்கை  </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><span>1</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>2</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>3</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>4</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+            <tr>
+               <td><span>5</span></td>
+               <td><span> ஈரோடு கிழக்கு </span></td>
+               <td><span> நவீன் </span></td>
+               <td><span> 9715523963 </span></td>
+               <td><span>  0  </span></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
